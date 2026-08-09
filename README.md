@@ -44,6 +44,24 @@
 
 ---
 
+## 🔑 Zero-Config — 零 API Key 依赖
+
+**不需要注册任何账号，不需要申请任何 API Key。** 所有数据源均为公开端点或 Agent 内置能力：
+
+| 数据源 | 类型 | 需要 API Key？ |
+|--------|------|:---:|
+| Sina Feed API | 公开 HTTP | ❌ |
+| Sina JS API（行情） | 公开 HTTP | ❌ |
+| Google News RSS | 公开 RSS | ❌ |
+| Yahoo Finance (`yfinance`) | 开源库 | ❌ |
+| AkShare | 开源 Python 库 | ❌ |
+| 浏览器抓取 | Agent 内置 | ❌ |
+| `web_search` / `web_extract` | Agent 内置 | ❌ |
+
+唯一前提：你的 AI Agent 支持 `web_search` + `web_extract`（或等效工具），这是几乎所有主流 Agent 的标配能力。即装即用，零配置。
+
+---
+
 ## 📁 项目结构
 
 ```
